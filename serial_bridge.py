@@ -25,7 +25,7 @@ parser.add_option("-p", "--port", dest="port",
 parser.add_option("-d", "--device", dest="device",
                   help="multicast device", metavar="ETH", default="eth0")
 parser.add_option("-b", "--baud", dest="baud",
-                  help="serial baud rate", metavar="RATE", default=115200)
+                  help="serial baud rate", metavar="RATE", default=57600)
 parser.add_option("-v", "--verbose", dest="verbose", action="store_true",
                   help="echo received messages to stdout")
 
