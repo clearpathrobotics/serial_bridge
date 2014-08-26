@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="husky_rtkgps_serialbridge" type="serial_bridge.py" name="nmea_rtk" args="/dev/clearpath/rtcm -b 57600" />
+</launch>

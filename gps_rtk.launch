@@ -1,3 +1,0 @@
-<launch>
-  <node pkg="serial_bridge" type="serial_bridge.py" name="nmea_rtk" args="/dev/clearpath/rtcm -b 57600" />
-</launch>
