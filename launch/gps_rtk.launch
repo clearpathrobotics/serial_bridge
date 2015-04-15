@@ -1,3 +1,7 @@
+<!-- By default the script attaches to eth0.  If this is not the port to which ROS is publishing, 
+be sure to add "-d <interface>" to the end of the args.  For example, if ROS is publishing to br0,
+add "-d br0" to the args.-->
+
 <launch>
   <node pkg="husky_rtkgps_serialbridge" type="serial_bridge.py" name="nmea_rtk" args="/dev/clearpath/rtcm -b 57600" />
 </launch>
