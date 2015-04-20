@@ -45,10 +45,10 @@ try:
     if ser_name and not ser:
       try:
         ser = serial.Serial(port=ser_name, baudrate=options.baud, timeout=0)
-        ser.open()
         print "Opened serial port."
-      except:
+      except Exception as e:
         ser = None
+        print str(e)
     if ser:
       ser.write(s)
       ser.flush()
